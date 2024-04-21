@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Propinas</title>
+    <!-- Enlazar Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Calculadora de Propinas</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="totalFactura" class="form-label">Total de la Factura:</label>
+                        <input type="number" class="form-control" id="totalFactura" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="porcentajePropina" class="form-label">Porcentaje de Propina:</label>
+                        <input type="number" class="form-control" id="porcentajePropina" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="calcularPropina()">Calcular</button>
+                </form>
+                <div id="resultado" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Enlazar Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Script de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
